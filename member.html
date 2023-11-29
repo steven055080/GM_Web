@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員</title>
+    <link rel="stylesheet" href="./member.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">登入</button>
+                <button type="button" class="toggle-btn" onclick="signup()">註冊</button>
+            </div>
+
+            <form id="login" class="input-group" action="">
+                <p>電郵EMAIL或手機號碼</p>
+                <input type="text" class="input-field" required>
+                <p>密碼PASSWORD</p>
+                <input type="password" class="input-field" required>
+                <a href="">忘記密碼</a>
+                <p>使用社群帳戶登入</p>
+                <img width="50" src="./img/Group 28.png" alt="">
+                <img width="50" src="./img/Group 29.png" alt="">
+                <img width="50" src="./img/Group 30.png" alt="">
+                <img width="50" src="./img/Group 31.png" alt="">
+                <button type="submit" class="submit-btn">登入</button>
+            </form>
+
+
+            <form id="signup" class="input-group" action="">
+                <p>電郵EMAIL或手機號碼</p>
+                <input type="text" class="input-field" required>
+                <p>密碼PASSWORD</p>
+                <input type="password" class="input-field" required>
+                <p>請再輸入一次密碼PASSWORD AGAIN</p>
+                <input type="password" class="input-field" required>
+                <button type="submit" class="submit-btn">註冊</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "0";
+            z.style.borderRadius = "10px 0 10px 0";
+        };
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "550px";
+            z.style.left = "250px";
+            z.style.borderRadius = "0 10px 0 10px";
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+</body>
+
+</html>
