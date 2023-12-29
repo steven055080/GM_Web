@@ -136,7 +136,7 @@ aside {
 }
 
 .swiper {
-    width: 100%;
+    max-width: 90%;
     height: 100%;
 }
 

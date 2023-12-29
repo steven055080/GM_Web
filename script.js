@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
             1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
+                slidesPerView: 4,
+                spaceBetween: 40,
             },
         },
         navigation: {
@@ -298,12 +298,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
                 1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 50,
+                    slidesPerView: 4,
+                    spaceBetween: 40,
                 },
             },
             navigation: {
