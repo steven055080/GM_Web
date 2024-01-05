@@ -1,7 +1,7 @@
 // -------sec3最新/熱門變更
 document.addEventListener('DOMContentLoaded', function () {
     // 初始化Swiper
-    var swiper = new Swiper('.mySwiper', {
+    let swiper = new Swiper('.mySwiper', {
         // Swiper的相關配置
         slidesPerView: 1,
         spaceBetween: 10,
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 獲取所有的收音機按鈕
-    var radioButtons = document.querySelectorAll('.btn-check');
+    let radioButtons = document.querySelectorAll('.btn-check');
 
     // 將每個按鈕都設置一個change事件監聽器
     radioButtons.forEach(function (radio) {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 定義一個函數，根據所選的值改變Swiper的內容
     function changeSwiperContent(value) {
         // 獲取Swiper的wrapper元素
-        var swiperWrapper = document.querySelector('.swiper-wrapper');
+        let swiperWrapper = document.querySelector('.swiper-wrapper');
 
         // 清空Swiper的內容
         swiperWrapper.innerHTML = '';
@@ -336,9 +336,9 @@ $(document).ready(function () {
 });
 
 // -------member
-var x = document.getElementById("login");
-var y = document.getElementById("signup");
-var z = document.getElementById("btn");
+let x = document.getElementById("login");
+let y = document.getElementById("signup");
+let z = document.getElementById("btn");
 
 function signup() {
     x.style.left = "-400px";
@@ -356,6 +356,6 @@ function login() {
 
 // -------產品點選換圖
 $(".sec-img").click(function () {
-    var N = $(this).attr("id").substr(2);
+    let N = $(this).attr("id").substr(2);
     $(".main-img").attr("src", "img/keyboard" + N + ".jpg");
 });
